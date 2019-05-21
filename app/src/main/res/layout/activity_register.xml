@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMsg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="Registro"
+            android:textColor="@color/blueDark"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvMsg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Usuario"
+            android:textColor="@color/blueText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:maxLength="10"
+            />
+
+        <TextView
+            android:id="@+id/tvMsg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blueText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="6"/>
+        <TextView
+            android:id="@+id/tvMsg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repita la constraseña"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blueText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPassPass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="6"/>
+
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Registrar"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/blueText"
+            android:onClick="registrar"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
