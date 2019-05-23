@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
                             if (!exist){
                                 //Si el correo ingresado no ha sido usado puede registrarse
                                 Intent intent = new Intent(RegisterActivity.this, DatosPersonalesActivity.class);
-                                intent.putExtra("user", etUser.getText().toString());
+                                intent.putExtra("email", etUser.getText().toString());
                                 intent.putExtra("pass", etPass.getText().toString());
                                 startActivity(intent);
 
@@ -50,6 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
                                 Toast.makeText(RegisterActivity.this, "Este correo ya esta registrado", Toast.LENGTH_SHORT).show();
                             }
 
+                        } else {
+                            Toast.makeText(RegisterActivity.this, "Tarea fallo", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

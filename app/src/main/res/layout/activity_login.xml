@@ -43,7 +43,6 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="text"
-            android:maxLength="10"
             />
 
         <TextView
