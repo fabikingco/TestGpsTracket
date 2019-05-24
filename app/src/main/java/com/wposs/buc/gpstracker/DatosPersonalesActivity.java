@@ -59,6 +59,7 @@ public class DatosPersonalesActivity extends AppCompatActivity {
             myIntent.putExtra("code", code);
             myIntent.putExtra("imageUri", resultUri);
             startActivity(myIntent);
+            finish();
 
         } else {
             Toast.makeText(this, "Por favor selecciona una imagen", Toast.LENGTH_SHORT).show();

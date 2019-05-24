@@ -42,7 +42,7 @@
             android:layout_marginTop="5dp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             />
 
         <TextView
@@ -61,8 +61,7 @@
             android:layout_marginTop="5dp"
             android:ems="10"
             android:gravity="center"
-            android:inputType="number"
-            android:maxLength="6"/>
+            android:inputType="textPassword" />
 
 
         <Button

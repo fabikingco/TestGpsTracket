@@ -44,6 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 intent.putExtra("email", etUser.getText().toString());
                                 intent.putExtra("pass", etPass.getText().toString());
                                 startActivity(intent);
+                                finish();
 
                             } else {
                                 //El correo ya ha sido usado

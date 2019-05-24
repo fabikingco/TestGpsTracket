@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.wposs.buc.gpstracker">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".InviteCodeActivity"></activity>
+        <activity
+            android:name=".MyNavigationActivity"
+            android:label="@string/title_activity_my_navigation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".InviteCodeActivity" />
         <activity android:name=".DatosPersonalesActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
