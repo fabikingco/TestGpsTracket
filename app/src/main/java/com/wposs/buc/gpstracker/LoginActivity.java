@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(LoginActivity.this, "Inicio de sesion exitoso", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this, MyNavigationActivity.class);
+                            Intent intent = new Intent(LoginActivity.this, UserLocationMainActivity.class);
                             startActivity(intent);
                             finish();
                         }else {

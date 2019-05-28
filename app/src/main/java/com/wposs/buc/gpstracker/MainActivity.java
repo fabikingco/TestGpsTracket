@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             manager.checkAndRequestPermissions(this);
 
         } else{
-            Intent intent = new Intent(this, MyNavigationActivity.class);
+            Intent intent = new Intent(this, UserLocationMainActivity.class);
             startActivity(intent);
             finish();
         }

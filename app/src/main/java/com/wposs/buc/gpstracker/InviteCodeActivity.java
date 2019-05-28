@@ -76,7 +76,7 @@ public class InviteCodeActivity extends AppCompatActivity {
                                             if (task.isSuccessful()){
                                                 dialog.dismiss();
                                                 Toast.makeText(InviteCodeActivity.this, "Usuarios registrado exitosamente", Toast.LENGTH_SHORT).show();
-                                                Intent intent = new Intent(InviteCodeActivity.this, MyNavigationActivity.class);
+                                                Intent intent = new Intent(InviteCodeActivity.this, UserLocationMainActivity.class);
                                                 startActivity(intent);
                                                 finish();
                                             } else {
